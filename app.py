@@ -478,15 +478,6 @@ if po_file and oa_file:
     render_items(po_data.items, oa_data.items)
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Raw text expanders
-    c1, c2 = st.columns(2)
-    with c1:
-        with st.expander("🔬 PO Raw Extracted Text"):
-            st.text_area("", po_text, height=280, label_visibility="collapsed")
-    with c2:
-        with st.expander("🔬 OA Raw Extracted Text"):
-            st.text_area("", oa_text, height=280, label_visibility="collapsed")
-
 else:
     st.markdown("""
     <div style="text-align:center;padding:70px 20px;color:#94a3b8;">
