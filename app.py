@@ -12,7 +12,7 @@ load_dotenv()
 API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 if not API_KEY:
-    st.error("❌ API Key not found. Check your .env file.")
+    st.error("❌ API Key not found")
     st.stop()
 
 # ─────────────────────────────
@@ -146,7 +146,7 @@ if st.button("🔍 Compare Documents", use_container_width=True):
 
     # AI compare
     with st.spinner("🤖 Comparing using AI..."):
-        result = compare_with_ai(po_text, oa_text)
+        result = compare_with_ai(po_text, oa_text) 
 
     if not result:
         st.error("❌ Comparison failed")
