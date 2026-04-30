@@ -85,7 +85,7 @@ OVERALL: COMPLIANT or DISCREPANCIES FOUND
 | delivery_address | ... | ... | ✅ / ❌ |
 | billing_address | ... | ... | ✅ / ❌ |
 | product_description | ... | ... | ✅ / ❌ |
-| customer_material_number | ... | ... | ✅ / ❌ |
+| customer_material_number | ... | ... | ✅ / ❌ |  
 
 --- PURCHASE ORDER ---
 {po_text[:3000]}
@@ -154,3 +154,4 @@ if st.button("🔍 Compare Documents", use_container_width=True):
 
     st.divider()
     st.markdown(result)
+  
